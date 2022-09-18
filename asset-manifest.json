@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chidorishar/goit-react-hw-02-feedback/static/css/main.7acaea2f.css",
+    "main.js": "/chidorishar/goit-react-hw-02-feedback/static/js/main.6121fac4.js",
+    "index.html": "/chidorishar/goit-react-hw-02-feedback/index.html",
+    "main.7acaea2f.css.map": "/chidorishar/goit-react-hw-02-feedback/static/css/main.7acaea2f.css.map",
+    "main.6121fac4.js.map": "/chidorishar/goit-react-hw-02-feedback/static/js/main.6121fac4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.6121fac4.js"
+  ]
+}
