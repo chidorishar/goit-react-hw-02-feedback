@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const List = styled.ul`
   display: flex;
+  margin: 10px 0 0;
   padding-left: 5px;
 
   list-style: none;
