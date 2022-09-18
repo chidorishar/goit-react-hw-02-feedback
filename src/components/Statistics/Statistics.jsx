@@ -10,11 +10,13 @@ export function Statistics({
 }) {
   return (
     <List>
-      <Field>Good: {good}</Field>
-      <Field>Neutral: {neutral}</Field>
-      <Field>Bad: {bad}</Field>
-      <Field>Total: {total}</Field>
-      <Field>Positive feedback: {positivePercentage ?? '--'}%</Field>
+      <Field key="stat-good">Good: {good}</Field>
+      <Field key="stat-neut">Neutral: {neutral}</Field>
+      <Field key="stat-bad">Bad: {bad}</Field>
+      <Field key="stat-tot">Total: {total}</Field>
+      <Field key="stat-pos">
+        Positive feedback: {positivePercentage ?? '--'}%
+      </Field>
     </List>
   );
 }
