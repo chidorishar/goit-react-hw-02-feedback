@@ -4,8 +4,8 @@ import { Button, Item, List } from './FeedbackOptions.styled';
 export function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <List>
-      {options.map((opt, indx) => (
-        <Item key={`opt-${indx}`}>
+      {options.map(opt => (
+        <Item key={opt}>
           <Button onClick={() => onLeaveFeedback(opt)}>{opt}</Button>
         </Item>
       ))}
