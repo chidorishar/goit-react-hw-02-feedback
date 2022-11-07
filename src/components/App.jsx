@@ -13,6 +13,21 @@ export class App extends Component {
     bad: 0,
   };
 
+  calcPositivePercentage() {
+    const { good } = this.state;
+    const total = this.calcTotalNumberFeedbacks();
+
+    if (!total) return;
+
+    return parseInt((good / total) * 100);
+  }
+
+  calcTotalNumberFeedbacks() {
+    const { good, neutral, bad } = this.state;
+
+    return good + neutral + bad;
+  }
+
   onFeedbackOptClicked = type => {
     this.setState(prevState => {
       return { [type]: prevState[type] + 1 };
@@ -21,8 +36,9 @@ export class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    const total = good + neutral + bad;
-    const positivePercentage = parseInt((good / total) * 100);
+
+    const total = this.calcTotalNumberFeedbacks();
+    const positivePercentage = this.calcPositivePercentage();
 
     return (
       <>
